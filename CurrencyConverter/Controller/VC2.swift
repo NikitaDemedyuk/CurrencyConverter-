@@ -12,6 +12,22 @@ class VC2: UIViewController {
     @IBAction func goBack(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
+    @IBAction func onBYNTapped(_ sender: Any) {
+    }
+    
+
+    @IBAction func onRUSTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func onUSDTapped(_ sender: Any) {
+    }
+    
+    @IBAction func onEURTapped(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

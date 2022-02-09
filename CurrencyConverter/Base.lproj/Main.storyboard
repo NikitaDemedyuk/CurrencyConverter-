@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="VC1" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="RKe-mh-hKV">
-                                <rect key="frame" x="30" y="188.33333333333334" width="169" height="110.00000000000003"/>
+                                <rect key="frame" x="30" y="188.5" width="169" height="110"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="a7r-Mb-l3U">
                                         <rect key="frame" x="0.0" y="0.0" width="169" height="45"/>
@@ -42,7 +42,7 @@
                                         </subviews>
                                     </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AoH-7q-rWC">
-                                        <rect key="frame" x="0.0" y="75.999999999999972" width="169" height="34"/>
+                                        <rect key="frame" x="0.0" y="76" width="169" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="3cg-vT-iep"/>
                                         </constraints>
@@ -52,7 +52,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="MGl-Ss-XaO">
-                                <rect key="frame" x="30" y="373.33333333333331" width="169" height="110"/>
+                                <rect key="frame" x="30" y="373.5" width="169" height="110"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="wd3-BW-b8H">
                                         <rect key="frame" x="0.0" y="0.0" width="169" height="45"/>
@@ -87,7 +87,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sz7-Cq-new">
-                                <rect key="frame" x="70" y="94" width="250" height="34.333333333333343"/>
+                                <rect key="frame" x="70" y="94" width="274" height="34.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -97,7 +97,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rRZ-sr-goZ">
-                                <rect key="frame" x="250" y="213.33333333333334" width="90" height="60.000000000000028"/>
+                                <rect key="frame" x="274" y="213.5" width="90" height="60"/>
                                 <color key="backgroundColor" red="0.78337205399999998" green="1" blue="0.79422856320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Lvi-Nt-JUT"/>
@@ -111,7 +111,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xze-0b-jHM">
-                                <rect key="frame" x="250" y="398.33333333333331" width="90" height="60"/>
+                                <rect key="frame" x="274" y="398.5" width="90" height="60"/>
                                 <color key="backgroundColor" red="0.78337205399999998" green="1" blue="0.79422856320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="6pE-eH-mKd"/>
@@ -125,16 +125,22 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oJ-OR-uX8">
-                                <rect key="frame" x="50" y="749" width="290" height="31"/>
+                                <rect key="frame" x="50" y="801" width="314" height="31"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                <connections>
+                                    <action selector="onClearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXJ-NV-jKU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvX-di-s4o">
-                                <rect key="frame" x="50" y="688" width="290" height="31"/>
+                                <rect key="frame" x="50" y="740" width="314" height="31"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Convert"/>
+                                <connections>
+                                    <action selector="onConvertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y56-r2-9xP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -181,7 +187,7 @@
             <objects>
                 <viewController id="Za3-UV-LDc" customClass="VC2" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HkO-NT-jjR">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwq-Q3-Gpx">
@@ -195,19 +201,89 @@
                                     <action selector="goBack:" destination="Za3-UV-LDc" eventType="touchUpInside" id="bvK-yt-EAT"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="syl-fE-Q5h">
+                                <rect key="frame" x="50" y="163" width="314" height="274"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1L6-P2-Cr7">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="BYN"/>
+                                        <connections>
+                                            <action selector="onBYNTapped:" destination="Za3-UV-LDc" eventType="touchUpInside" id="LE6-F1-p3L"/>
+                                            <action selector="onConvertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yes-cC-VGD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd8-MH-mtu">
+                                        <rect key="frame" x="0.0" y="81" width="314" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="RUS"/>
+                                        <connections>
+                                            <action selector="onConvertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FUT-rP-lX0"/>
+                                            <action selector="onRUSTapped:" destination="Za3-UV-LDc" eventType="touchUpInside" id="Z93-Oh-lLW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L23-Rn-DWG">
+                                        <rect key="frame" x="0.0" y="162" width="314" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="USD"/>
+                                        <connections>
+                                            <action selector="onConvertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7LE-Pj-O2D"/>
+                                            <action selector="onUSDTapped:" destination="Za3-UV-LDc" eventType="touchUpInside" id="XUR-XT-u97"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiY-z5-M9f">
+                                        <rect key="frame" x="0.0" y="243" width="314" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="EUR"/>
+                                        <connections>
+                                            <action selector="onConvertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnG-uq-Xyp"/>
+                                            <action selector="onEURTapped:" destination="Za3-UV-LDc" eventType="touchUpInside" id="Xiw-Aw-nOR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the currency:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6j-gS-jKf">
+                                <rect key="frame" x="40" y="88" width="334" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BwH-8p-KsW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NX-hU-GP3">
+                                <rect key="frame" x="50" y="700" width="314" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78337205399999998" green="1" blue="0.79422856320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CZ0-3j-ehL"/>
                         <color key="backgroundColor" red="0.65359432336457168" green="0.7693973183631897" blue="0.72677337687138366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Rwq-Q3-Gpx" firstAttribute="top" secondItem="CZ0-3j-ehL" secondAttribute="top" constant="20" id="37c-A0-FOI"/>
+                            <constraint firstItem="c6j-gS-jKf" firstAttribute="leading" secondItem="CZ0-3j-ehL" secondAttribute="leading" constant="40" id="6Kk-gu-Cdv"/>
+                            <constraint firstItem="syl-fE-Q5h" firstAttribute="leading" secondItem="CZ0-3j-ehL" secondAttribute="leading" constant="50" id="Jjb-E5-vFT"/>
                             <constraint firstItem="Rwq-Q3-Gpx" firstAttribute="leading" secondItem="CZ0-3j-ehL" secondAttribute="leading" constant="20" id="QSc-ft-lfi"/>
+                            <constraint firstItem="syl-fE-Q5h" firstAttribute="top" secondItem="c6j-gS-jKf" secondAttribute="bottom" constant="40" id="SQx-MA-WCn"/>
+                            <constraint firstItem="c6j-gS-jKf" firstAttribute="top" secondItem="Rwq-Q3-Gpx" secondAttribute="bottom" constant="30" id="aRt-IB-n6N"/>
+                            <constraint firstItem="CZ0-3j-ehL" firstAttribute="trailing" secondItem="c6j-gS-jKf" secondAttribute="trailing" constant="40" id="eIF-Kf-9OK"/>
+                            <constraint firstItem="CZ0-3j-ehL" firstAttribute="trailing" secondItem="syl-fE-Q5h" secondAttribute="trailing" constant="50" id="t1H-D2-TrJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vxZ-rX-5rT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybp-tc-yul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989.23076923076917" y="96.682464454976298"/>
+            <point key="canvasLocation" x="988.40579710144937" y="96.428571428571431"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
