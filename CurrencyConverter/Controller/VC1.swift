@@ -9,6 +9,8 @@ import UIKit
 
 class VC1: UIViewController {
 
+    var money: Currency!
+    
     @IBOutlet weak var headLbl: UILabel!
    
     @IBOutlet weak var flagImg1: UIImageView!

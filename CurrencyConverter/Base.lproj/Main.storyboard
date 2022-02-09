@@ -280,6 +280,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vxZ-rX-5rT"/>
+                    <connections>
+                        <outlet property="selectBtn" destination="9NX-hU-GP3" id="QNX-cS-Akn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybp-tc-yul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

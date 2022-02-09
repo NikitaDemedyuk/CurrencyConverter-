@@ -9,4 +9,8 @@ import Foundation
 
 class Currency {
     var typeCurrency: String!
+    
+    init (typeCurrencyMoney: String) {
+        self.typeCurrency = typeCurrencyMoney
+    }
 }
