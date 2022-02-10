@@ -22,7 +22,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="a7r-Mb-l3U">
                                         <rect key="frame" x="0.0" y="0.0" width="169" height="45"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uvw-Lb-IRS">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usdFlagImage" translatesAutoresizingMaskIntoConstraints="NO" id="Uvw-Lb-IRS">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="4PD-Ok-hLN"/>
@@ -57,14 +57,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="wd3-BW-b8H">
                                         <rect key="frame" x="0.0" y="0.0" width="169" height="45"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hvg-sx-Qz4">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rusFlagImage" translatesAutoresizingMaskIntoConstraints="NO" id="hvg-sx-Qz4">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="dRh-oD-8Tc"/>
                                                     <constraint firstAttribute="width" constant="70" id="wQf-og-lFm"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzs-en-6q0">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RUS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzs-en-6q0">
                                                 <rect key="frame" x="99" y="0.0" width="70" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
@@ -256,7 +256,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NX-hU-GP3">
-                                <rect key="frame" x="50" y="700" width="314" height="52"/>
+                                <rect key="frame" x="40" y="706" width="314" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.78337205399999998" green="1" blue="0.79422856320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -264,6 +264,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Select">
                                     <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectBtnPressed:" destination="Za3-UV-LDc" eventType="touchUpInside" id="AKj-iV-sl0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CZ0-3j-ehL"/>
@@ -294,6 +297,8 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backButton" width="29" height="24"/>
+        <image name="rusFlagImage" width="250" height="167"/>
+        <image name="usdFlagImage" width="250" height="132"/>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

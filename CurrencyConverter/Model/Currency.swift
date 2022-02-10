@@ -7,10 +7,7 @@
 
 import Foundation
 
-class Currency {
+struct Currency {
     var typeCurrency: String!
-    
-    init (typeCurrencyMoney: String) {
-        self.typeCurrency = typeCurrencyMoney
-    }
+    var flagCurrecny: String!
 }
