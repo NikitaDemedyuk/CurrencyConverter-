@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VC1: UIViewController {
+class VC1: UIViewController, UITextFieldDelegate {
 
     var money: Currency!
     
@@ -30,16 +30,26 @@ class VC1: UIViewController {
     }
     
     @IBAction func onClearTapped(_ sender: UIButton) {
-        
+        txtField1.text = ""
+        txtField2.text = ""
+    
     }
     
+    /*@objc func calculate() {
+        if let wageTxt = wageTxt.text, let priceTxt = priceTxt.text {
+            if let wage = Double(wageTxt), let price = Double(priceTxt) {
+                view.endEditing(true)
+                resultLbl.isHidden = false
+                hoursLbl.isHidden = false
+                resultLbl.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+            }
+        }
+    } */
+    
+    
+    
     override func viewDidLoad() {
-        
-        let data = txtField1
-        txtField2 = data
-        
         super.viewDidLoad()
-
     }
 }
 
