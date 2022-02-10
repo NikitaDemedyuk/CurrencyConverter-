@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
 struct Currency {
     var typeCurrency: String!
-    var flagCurrecny: String!
+    var flagCurrecny: UIImageView!
 }

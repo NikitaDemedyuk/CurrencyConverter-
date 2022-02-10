@@ -11,7 +11,7 @@
         <!--VC1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="VC1" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC1" id="BYZ-38-t0r" customClass="VC1" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +107,8 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Select currency"/>
                                 <connections>
-                                    <segue destination="Za3-UV-LDc" kind="show" id="Ebo-XW-81t"/>
+                                    <action selector="selectCur1BtnAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtj-3y-4fh"/>
+                                    <segue destination="Za3-UV-LDc" kind="show" identifier="selCur1" id="Ebo-XW-81t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xze-0b-jHM">
@@ -121,7 +122,8 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Select currency"/>
                                 <connections>
-                                    <segue destination="Za3-UV-LDc" kind="show" id="ohO-bl-xla"/>
+                                    <action selector="selectCur2BtnAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTh-hl-Mgc"/>
+                                    <segue destination="Za3-UV-LDc" kind="show" identifier="selCur2" id="EN5-Xm-gzw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oJ-OR-uX8">
@@ -185,7 +187,7 @@
         <!--VC2-->
         <scene sceneID="NG9-ya-6PJ">
             <objects>
-                <viewController id="Za3-UV-LDc" customClass="VC2" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC2" id="Za3-UV-LDc" customClass="VC2" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HkO-NT-jjR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,16 +291,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybp-tc-yul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988.40579710144937" y="96.428571428571431"/>
+            <point key="canvasLocation" x="1029" y="97"/>
+        </scene>
+        <!--VC3-->
+        <scene sceneID="F2m-5f-CbA">
+            <objects>
+                <viewController id="Os2-FV-GPy" customClass="VC3" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="seO-80-6uG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jl5-j1-ldZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ue9-b2-tFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2122" y="469"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ohO-bl-xla"/>
+        <segue reference="EN5-Xm-gzw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backButton" width="29" height="24"/>
         <image name="rusFlagImage" width="250" height="167"/>
         <image name="usdFlagImage" width="250" height="132"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
