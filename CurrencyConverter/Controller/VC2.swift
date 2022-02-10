@@ -10,7 +10,10 @@ import UIKit
 class VC2: UIViewController {
 
     var money: Currency!
-        
+      
+    
+    
+    
     @IBAction func goBack(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
