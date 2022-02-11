@@ -14,6 +14,7 @@ class VC2: UIViewController {
     var money2: Currency!
     
     var segueIdentifier:String?
+    
       
     @IBAction func goBack(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
@@ -22,40 +23,48 @@ class VC2: UIViewController {
     @IBAction func onBYNTapped(_ sender: Any) {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "BYN"
+            money1.imageFlagViewNum = 1
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "BYN"
+            money2.imageFlagViewNum = 1
         }
     }
     
     @IBAction func onRUSTapped(_ sender: Any) {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "RUS"
+            money1.imageFlagViewNum = 2
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "RUS"
+            money2.imageFlagViewNum = 2
         }
     }
     
     @IBAction func onUSDTapped(_ sender: Any) {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "USD"
+            money1.imageFlagViewNum = 3
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "USD"
+            money2.imageFlagViewNum = 3
         }
     }
     
     @IBAction func onEURTapped(_ sender: Any) {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "EUR"
+            money1.imageFlagViewNum = 4
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "EUR"
+            money2.imageFlagViewNum = 4
         }
     }
     
@@ -66,6 +75,8 @@ class VC2: UIViewController {
     
     var dataClosure: Closure?
     var dataClosure2: Closure?
+    
+   
     
     
     @IBAction func selectBtnPressed(_ sender: Any) {
@@ -80,7 +91,7 @@ class VC2: UIViewController {
         if money2.typeCurrency != nil {
            
             dataClosure2?(money2.typeCurrency)
-          
+            
             dismiss(animated: true, completion: nil)
         
         } else {
