@@ -10,6 +10,5 @@ import UIKit
 
 struct Currency {
     var typeCurrency: String!
-    var imageFlagViewNum: Int!
-    var flagCurrecny: UIImageView!
+    var imageFlagView: String!
 }

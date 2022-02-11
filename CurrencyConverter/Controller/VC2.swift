@@ -23,48 +23,48 @@ class VC2: UIViewController {
     @IBAction func onBYNTapped(_ sender: Any) {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "BYN"
-            money1.imageFlagViewNum = 1
+            money1.imageFlagView = "BYNFlag"
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "BYN"
-            money2.imageFlagViewNum = 1
+            money2.imageFlagView = "BYNFlag"
         }
     }
     
     @IBAction func onRUSTapped(_ sender: Any) {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "RUS"
-            money1.imageFlagViewNum = 2
+            money1.imageFlagView = "RUSFlag"
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "RUS"
-            money2.imageFlagViewNum = 2
+            money2.imageFlagView = "RUSFlag"
         }
     }
     
     @IBAction func onUSDTapped(_ sender: Any) {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "USD"
-            money1.imageFlagViewNum = 3
+            money1.imageFlagView = "USDFlag"
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "USD"
-            money2.imageFlagViewNum = 3
+            money2.imageFlagView = "USDFlag"
         }
     }
     
     @IBAction func onEURTapped(_ sender: Any) {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "EUR"
-            money1.imageFlagViewNum = 4
+            money1.imageFlagView = "EURFlag"
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "EUR"
-            money2.imageFlagViewNum = 4
+            money2.imageFlagView = "EURFlag"
         }
     }
     
@@ -76,14 +76,17 @@ class VC2: UIViewController {
     var dataClosure: Closure?
     var dataClosure2: Closure?
     
-   
+    var flagClosure: Closure?
+    var flagClosure2: Closure?
     
     
     @IBAction func selectBtnPressed(_ sender: Any) {
         if money1.typeCurrency != nil {
            
             dataClosure?(money1.typeCurrency)
-        
+            
+            flagClosure?(money1.imageFlagView)
+            
             dismiss(animated: true, completion: nil)
         
         }
@@ -91,6 +94,8 @@ class VC2: UIViewController {
         if money2.typeCurrency != nil {
            
             dataClosure2?(money2.typeCurrency)
+            
+            flagClosure2?(money2.imageFlagView)
             
             dismiss(animated: true, completion: nil)
         

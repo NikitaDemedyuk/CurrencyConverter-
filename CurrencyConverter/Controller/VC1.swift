@@ -13,10 +13,6 @@ class VC1: UIViewController, UITextFieldDelegate {
     
     var money2: Currency!
     
-    var flag1: Bool!
-    
-    var flag2: Bool!
-    
     @IBOutlet weak var headLbl: UILabel!
    
     @IBOutlet weak var flagImg1: UIImageView!
@@ -64,12 +60,45 @@ class VC1: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc2 = segue.destination as? VC2 {
             vc2.dataClosure = { [weak self] text in
+                print(text)
                 self?.typeCur1.text = text
+            }
+            
+            vc2.flagClosure = { [weak self] text in
+                switch text {
+                case "BYNFlag":
+                    self?.flagImg1.image = UIImage(named: "belFlagImage.jpg")
+                case "RUSFlag":
+                    self?.flagImg1.image = UIImage(named: "rusFlagImage.jpg")
+                case "USDFlag":
+                    self?.flagImg1.image = UIImage(named: "usdFlagImage.jpg")
+                case "EURFlag":
+                    self?.flagImg2.image = UIImage(named: "eurFlagImage.jpg")
+                default:
+                    print("Error")
+                }
             }
             
             vc2.dataClosure2 = { [weak self] text in
                 self?.typeCur2.text = text
             }
+            
+            vc2.flagClosure2 = { [weak self] text in
+                switch text {
+                case "BYNFlag":
+                    self?.flagImg2.image = UIImage(named: "belFlagImage.jpg")
+                case "RUSFlag":
+                    self?.flagImg2.image = UIImage(named: "rusFlagImage.jpg")
+                case "USDFlag":
+                    self?.flagImg2.image = UIImage(named: "usdFlagImage.jpg")
+                case "EURFlag":
+                    self?.flagImg2.image = UIImage(named: "eurFlagImage.jpg")
+                default:
+                    print("Error")
+                }
+           
+            }
+            
             
             vc2.segueIdentifier = segue.identifier
         }
@@ -78,6 +107,9 @@ class VC1: UIViewController, UITextFieldDelegate {
     
     func calculate() {
         if typeCur1.text == "EUR" {
+            
+            txtField1.isEnabled = false
+            
             switch typeCur2.text {
             case "USD":
                 let numField1 = Double(txtField1.text!)!
@@ -95,6 +127,8 @@ class VC1: UIViewController, UITextFieldDelegate {
         }
         
         if typeCur2.text == "EUR" {
+            txtField1.isEnabled = false
+            
             switch typeCur1.text {
             case "USD":
                 let numField1 = Double(txtField2.text!)!
@@ -149,11 +183,7 @@ class VC1: UIViewController, UITextFieldDelegate {
         
     }
 
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         txtField1.keyboardType = .decimalPad
