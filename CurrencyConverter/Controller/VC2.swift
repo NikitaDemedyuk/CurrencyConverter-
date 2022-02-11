@@ -38,11 +38,13 @@ class VC2: UIViewController {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "BYN"
             money1.imageFlagView = "BYNFlag"
+            money1.currencyExchange = 8.0
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "BYN"
             money2.imageFlagView = "BYNFlag"
+            money2.currencyExchange = 8.0
         }
     }
     
@@ -56,11 +58,13 @@ class VC2: UIViewController {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "RUS"
             money1.imageFlagView = "RUSFlag"
+            money1.currencyExchange = 5.0
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "RUS"
             money2.imageFlagView = "RUSFlag"
+            money2.currencyExchange = 5.0
         }
     }
     
@@ -73,11 +77,13 @@ class VC2: UIViewController {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "USD"
             money1.imageFlagView = "USDFlag"
+            money1.currencyExchange = 2.5
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "USD"
             money2.imageFlagView = "USDFlag"
+            money2.currencyExchange = 2.5
         }
     }
     
@@ -91,17 +97,20 @@ class VC2: UIViewController {
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "EUR"
             money1.imageFlagView = "EURFlag"
+            money1.currencyExchange = 2.0
+            
         }
         
         if segueIdentifier == "selCur2" {
             money2.typeCurrency = "EUR"
             money2.imageFlagView = "EURFlag"
+            money2.currencyExchange = 2.0
         }
     }
     
-   
-    
     typealias Closure = (String) -> ()
+    
+    typealias ClosureDouble = (Double) -> ()
     
     var dataClosure: Closure?
     var dataClosure2: Closure?
@@ -109,9 +118,12 @@ class VC2: UIViewController {
     var flagClosure: Closure?
     var flagClosure2: Closure?
     
-    
+    var doubleCurClosureM1: ClosureDouble?
+    var doubleCurClosureM2: ClosureDouble?
+
     @IBAction func selectBtnPressed(_ sender: Any) {
         
+            
         if money1.typeCurrency != nil {
         
             selectBtn.setSelectColorBtnSelect()
@@ -119,6 +131,8 @@ class VC2: UIViewController {
             dataClosure?(money1.typeCurrency)
             
             flagClosure?(money1.imageFlagView)
+            
+            doubleCurClosureM1?(money1.currencyExchange)
             
             dismiss(animated: true, completion: nil)
         
@@ -131,6 +145,8 @@ class VC2: UIViewController {
             dataClosure2?(money2.typeCurrency)
             
             flagClosure2?(money2.imageFlagView)
+            
+            doubleCurClosureM2?(money2.currencyExchange)
             
             dismiss(animated: true, completion: nil)
         

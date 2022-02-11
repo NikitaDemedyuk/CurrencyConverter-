@@ -53,9 +53,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		114C56CE27B6FC0B004695AA /* CurrencyConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CurrencyConverterTests;
+			sourceTree = "<group>";
+		};
 		11E8165727B413F5003D5B88 = {
 			isa = PBXGroup;
 			children = (
+				114C56CE27B6FC0B004695AA /* CurrencyConverterTests */,
 				11E8166227B413F5003D5B88 /* CurrencyConverter */,
 				11E8166127B413F5003D5B88 /* Products */,
 			);
