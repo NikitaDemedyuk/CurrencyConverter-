@@ -20,12 +20,14 @@ class VC1: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var typeCur1: UILabel!
     
     @IBAction func selectCur1BtnAct(_ sender: Any) {
-      
+        selectCurBtn1.setSelectColorBtnSelect()
+        selectCurBtn2.setDeselectColorBtnSelect()
     }
     
     @IBOutlet weak var txtField1: UITextField!
     
     
+    @IBOutlet weak var selectCurBtn1: UIButton!
     
     @IBOutlet weak var flagImg2: UIImageView!
     
@@ -33,11 +35,12 @@ class VC1: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var txtField2: UITextField!
     
+    @IBOutlet weak var selectCurBtn2: UIButton!
     
     @IBAction func selectCur2BtnAct(_ sender: Any) {
-    
+        selectCurBtn1.setDeselectColorBtnSelect()
+        selectCurBtn2.setSelectColorBtnSelect()
     }
-    
     
     @IBAction func onConvertTapped(_ sender: UIButton) {
         calculate()
@@ -73,7 +76,7 @@ class VC1: UIViewController, UITextFieldDelegate {
                 case "USDFlag":
                     self?.flagImg1.image = UIImage(named: "usdFlagImage.jpg")
                 case "EURFlag":
-                    self?.flagImg2.image = UIImage(named: "eurFlagImage.jpg")
+                    self?.flagImg1.image = UIImage(named: "eurFlagImage.jpg")
                 default:
                     print("Error")
                 }
@@ -96,90 +99,87 @@ class VC1: UIViewController, UITextFieldDelegate {
                 default:
                     print("Error")
                 }
-           
             }
-            
             
             vc2.segueIdentifier = segue.identifier
         }
     }
     
-    
     func calculate() {
-        if typeCur1.text == "EUR" {
+        if !txtField1.text!.isEmpty || !txtField2.text!.isEmpty {
+            if typeCur1.text == "EUR" {
+                
+                switch typeCur2.text {
+                case "USD":
+                    let numField1 = Double(txtField1.text!)
+                    txtField2.text = String(numField1! * 2.0)
+                case "RUS":
+                    let numField1 = Double(txtField1.text!)
+                    txtField2.text = String(numField1! * 6.0)
+                case "BYN":
+                    let numField1 = Double(txtField1.text!)
+                    txtField2.text = String(numField1! * 8.0)
+                default:
+                    txtField2.text = txtField1.text
+                }
+            }
             
-            txtField1.isEnabled = false
+            if typeCur2.text == "EUR" {
+                switch typeCur1.text {
+                case "USD":
+                    let numField1 = Double(txtField2.text!)!
+                    var numField2: Double? = (numField1 * 2.0)
+                    txtField1.text = String(numField2!)
+                case "RUS":
+                    let numField1 = Double(txtField2.text!)
+                    txtField1.text = String(numField1! * 6.0)
+                case "BYN":
+                    let numField1 = Double(txtField2.text!)
+                    txtField1.text = String(numField1! * 8.0)
+                default:
+                    print(txtField1)
+                }
+            }
             
-            switch typeCur2.text {
-            case "USD":
-                let numField1 = Double(txtField1.text!)!
-                var numField2: Double? = (numField1 * 2.0)
-                txtField2.text = String(numField2!)
-            case "RUS":
-                let numField1 = Double(txtField1.text!)
-                txtField2.text = String(numField1! * 6)
-            case "BYN":
-                let numField1 = Double(txtField1.text!)
-                txtField2.text = String(numField1! * 8)
-            default:
-                txtField2.text = txtField1.text
+            if typeCur1.text == "USD" {
+                switch typeCur2.text {
+                case "EUR":
+                    let numField1 = Double(txtField1.text!)!
+                    var numField2: Double? = (numField1 * 0.5)
+                    txtField2.text = String(numField2!)
+                case "RUS":
+                    let numField1 = Double(txtField1.text!)
+                    txtField2.text = String(numField1! * 3.0)
+                case "BYN":
+                    let numField1 = Double(txtField1.text!)
+                    txtField2.text = String(numField1! * 4.0)
+                default:
+                    txtField2.text = txtField1.text
+                }
             }
-        }
-        
-        if typeCur2.text == "EUR" {
-            txtField1.isEnabled = false
             
-            switch typeCur1.text {
-            case "USD":
-                let numField1 = Double(txtField2.text!)!
-                var numField2: Double? = (numField1 * 2.0)
-                txtField1.text = String(numField2!)
-            case "RUS":
-                let numField1 = Double(txtField2.text!)
-                txtField1.text = String(numField1! * 6.0)
-            case "BYN":
-                let numField1 = Double(txtField2.text!)
-                txtField1.text = String(numField1! * 8.0)
-            default:
-                print(txtField1)
+            if typeCur2.text == "USD" {
+                switch typeCur1.text {
+                case "EUR":
+                    let numField1 = Double(txtField2.text!)!
+                    var numField2: Double? = (numField1 * 0.5)
+                    txtField1.text = String(numField2!)
+                case "RUS":
+                    let numField1 = Double(txtField2.text!)
+                    txtField1.text = String(numField1! * 3.0)
+                case "BYN":
+                    let numField1 = Double(txtField2.text!)
+                    txtField1.text = String(numField1! * 4.0)
+                default:
+                    txtField1.text = txtField2.text
+                }
             }
+        } else {
+            let alert = UIAlertController(title: "Empty fields", message: "Please, enter numbers at least in one field!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
         }
-        
-        if typeCur1.text == "USD" {
-            switch typeCur2.text {
-            case "EUR":
-                let numField1 = Double(txtField1.text!)!
-                var numField2: Double? = (numField1 * 0.5)
-                txtField2.text = String(numField2!)
-            case "RUS":
-                let numField1 = Double(txtField1.text!)
-                txtField2.text = String(numField1! * 3.0)
-            case "BYN":
-                let numField1 = Double(txtField1.text!)
-                txtField2.text = String(numField1! * 4.0)
-            default:
-                txtField2.text = txtField1.text
-            }
-        }
-        
-        if typeCur2.text == "USD" {
-            switch typeCur1.text {
-            case "EUR":
-                let numField1 = Double(txtField2.text!)!
-                var numField2: Double? = (numField1 * 0.5)
-                txtField1.text = String(numField2!)
-            case "RUS":
-                let numField1 = Double(txtField2.text!)
-                txtField1.text = String(numField1! * 3.0)
-            case "BYN":
-                let numField1 = Double(txtField2.text!)
-                txtField1.text = String(numField1! * 4.0)
-            default:
-                print(txtField1)
-            }
-        }
-        
-        
         
     }
 

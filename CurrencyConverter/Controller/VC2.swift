@@ -15,12 +15,26 @@ class VC2: UIViewController {
     
     var segueIdentifier:String?
     
-      
+    @IBOutlet weak var BYNBtn: UIButton!
+    
+    @IBOutlet weak var RUSBtn: UIButton!
+    
+    @IBOutlet weak var USDBtn: UIButton!
+    
+    @IBOutlet weak var EURBtn: UIButton!
+    
+    @IBOutlet weak var selectBtn: UIButton!
+    
     @IBAction func goBack(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func onBYNTapped(_ sender: Any) {
+        BYNBtn.setSelectColorBtnCur()
+        RUSBtn.setDeselectColorBtnCur()
+        USDBtn.setDeselectColorBtnCur()
+        EURBtn.setDeselectColorBtnCur()
+        
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "BYN"
             money1.imageFlagView = "BYNFlag"
@@ -33,6 +47,12 @@ class VC2: UIViewController {
     }
     
     @IBAction func onRUSTapped(_ sender: Any) {
+        BYNBtn.setDeselectColorBtnCur()
+        RUSBtn.setSelectColorBtnCur()
+        USDBtn.setDeselectColorBtnCur()
+        EURBtn.setDeselectColorBtnCur()
+        
+        
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "RUS"
             money1.imageFlagView = "RUSFlag"
@@ -45,6 +65,11 @@ class VC2: UIViewController {
     }
     
     @IBAction func onUSDTapped(_ sender: Any) {
+        BYNBtn.setDeselectColorBtnCur()
+        RUSBtn.setDeselectColorBtnCur()
+        USDBtn.setSelectColorBtnCur()
+        EURBtn.setDeselectColorBtnCur()
+        
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "USD"
             money1.imageFlagView = "USDFlag"
@@ -57,6 +82,12 @@ class VC2: UIViewController {
     }
     
     @IBAction func onEURTapped(_ sender: Any) {
+        
+        BYNBtn.setDeselectColorBtnCur()
+        RUSBtn.setDeselectColorBtnCur()
+        USDBtn.setDeselectColorBtnCur()
+        EURBtn.setSelectColorBtnCur()
+        
         if segueIdentifier == "selCur1" {
             money1.typeCurrency = "EUR"
             money1.imageFlagView = "EURFlag"
@@ -68,8 +99,7 @@ class VC2: UIViewController {
         }
     }
     
-    @IBOutlet weak var selectBtn: UIButton!
-    
+   
     
     typealias Closure = (String) -> ()
     
@@ -81,8 +111,11 @@ class VC2: UIViewController {
     
     
     @IBAction func selectBtnPressed(_ sender: Any) {
+        
         if money1.typeCurrency != nil {
-           
+        
+            selectBtn.setSelectColorBtnSelect()
+            
             dataClosure?(money1.typeCurrency)
             
             flagClosure?(money1.imageFlagView)
@@ -93,6 +126,8 @@ class VC2: UIViewController {
         
         if money2.typeCurrency != nil {
            
+            selectBtn.setSelectColorBtnSelect()
+            
             dataClosure2?(money2.typeCurrency)
             
             flagClosure2?(money2.imageFlagView)
@@ -109,7 +144,6 @@ class VC2: UIViewController {
         
     }
     
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         

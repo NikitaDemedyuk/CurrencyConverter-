@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114C56CD27B66F2C004695AA /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C56CC27B66F2C004695AA /* UIButtonExt.swift */; };
 		119124A527B5678400D3D59E /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119124A427B5678400D3D59E /* VC3.swift */; };
 		11E8166427B413F5003D5B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8166327B413F5003D5B88 /* AppDelegate.swift */; };
 		11E8166627B413F5003D5B88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8166527B413F5003D5B88 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114C56CC27B66F2C004695AA /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 		119124A427B5678400D3D59E /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
 		11E8166027B413F5003D5B88 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E8166327B413F5003D5B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114C56CB27B66F07004695AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				114C56CC27B66F2C004695AA /* UIButtonExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		11E8165727B413F5003D5B88 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		11E8166227B413F5003D5B88 /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
+				114C56CB27B66F07004695AA /* Extensions */,
 				11E8167927B42682003D5B88 /* Controller */,
 				11E8167827B42675003D5B88 /* View */,
 				11E8167727B42668003D5B88 /* Model */,
@@ -176,6 +187,7 @@
 				11E8167D27B44289003D5B88 /* Currency.swift in Sources */,
 				11E8166427B413F5003D5B88 /* AppDelegate.swift in Sources */,
 				11E8166627B413F5003D5B88 /* SceneDelegate.swift in Sources */,
+				114C56CD27B66F2C004695AA /* UIButtonExt.swift in Sources */,
 				11E8167B27B42775003D5B88 /* VC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
