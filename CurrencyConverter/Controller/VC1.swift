@@ -127,8 +127,8 @@ class VC1: UIViewController, UITextFieldDelegate {
             if typeCur2.text == "EUR" {
                 switch typeCur1.text {
                 case "USD":
-                    let numField1 = Double(txtField2.text!)!
-                    var numField2: Double? = (numField1 * 2.0)
+                    let numField1 = Double(txtField2.text!)
+                    var numField2: Double? = (numField1! * 2.0)
                     txtField1.text = String(numField2!)
                 case "RUS":
                     let numField1 = Double(txtField2.text!)
@@ -144,8 +144,8 @@ class VC1: UIViewController, UITextFieldDelegate {
             if typeCur1.text == "USD" {
                 switch typeCur2.text {
                 case "EUR":
-                    let numField1 = Double(txtField1.text!)!
-                    var numField2: Double? = (numField1 * 0.5)
+                    let numField1 = Double(txtField1.text!)
+                    var numField2: Double? = (numField1! * 0.5)
                     txtField2.text = String(numField2!)
                 case "RUS":
                     let numField1 = Double(txtField1.text!)
@@ -161,8 +161,8 @@ class VC1: UIViewController, UITextFieldDelegate {
             if typeCur2.text == "USD" {
                 switch typeCur1.text {
                 case "EUR":
-                    let numField1 = Double(txtField2.text!)!
-                    var numField2: Double? = (numField1 * 0.5)
+                    let numField1 = Double(txtField2.text!)
+                    var numField2: Double? = (numField1! * 0.5)
                     txtField1.text = String(numField2!)
                 case "RUS":
                     let numField1 = Double(txtField2.text!)
