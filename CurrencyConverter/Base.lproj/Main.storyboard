@@ -492,7 +492,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use this app?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8O-aP-uNx">
-                                <rect key="frame" x="50" y="88" width="314" height="37"/>
+                                <rect key="frame" x="50" y="78" width="314" height="37"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -500,12 +500,17 @@
                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fop-6z-6EZ">
-                                <rect key="frame" x="20" y="145" width="374" height="643"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fop-6z-6EZ">
+                                <rect key="frame" x="20" y="120" width="374" height="668"/>
                                 <color key="backgroundColor" red="0.65359432340000001" green="0.76939731840000003" blue="0.72677337689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">When you have opened this app you should do:
+1) First of all, you must select the currency type for upper text field by pressing upper button "Select currency"
+2) Then you must select the currency type for lower text field by pressing lower button "Select currency"
+3) After that you can enter number in text field, next to which there is a DARK GREEN button "Select currency"
+4) Then enter button "Convert" down below the screen.
+5) If you want to clear the field, enter "Clear" button  </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -516,9 +521,9 @@
                             <constraint firstItem="cZZ-N4-8Sb" firstAttribute="leading" secondItem="jl5-j1-ldZ" secondAttribute="leading" constant="20" id="K05-HX-b4m"/>
                             <constraint firstItem="fop-6z-6EZ" firstAttribute="centerX" secondItem="seO-80-6uG" secondAttribute="centerX" id="Nfm-p5-gNm"/>
                             <constraint firstItem="q8O-aP-uNx" firstAttribute="leading" secondItem="jl5-j1-ldZ" secondAttribute="leading" constant="50" id="Pac-c3-3rn"/>
-                            <constraint firstItem="q8O-aP-uNx" firstAttribute="top" secondItem="cZZ-N4-8Sb" secondAttribute="bottom" constant="30" id="XqC-zh-Yc8"/>
+                            <constraint firstItem="q8O-aP-uNx" firstAttribute="top" secondItem="cZZ-N4-8Sb" secondAttribute="bottom" constant="20" id="XqC-zh-Yc8"/>
                             <constraint firstItem="jl5-j1-ldZ" firstAttribute="bottom" secondItem="fop-6z-6EZ" secondAttribute="bottom" constant="20" id="Zab-Hb-ttm"/>
-                            <constraint firstItem="fop-6z-6EZ" firstAttribute="top" secondItem="q8O-aP-uNx" secondAttribute="bottom" constant="20" id="dOd-DX-ZxS"/>
+                            <constraint firstItem="fop-6z-6EZ" firstAttribute="top" secondItem="q8O-aP-uNx" secondAttribute="bottom" constant="5" id="dOd-DX-ZxS"/>
                             <constraint firstItem="jl5-j1-ldZ" firstAttribute="trailing" secondItem="fop-6z-6EZ" secondAttribute="trailing" constant="20" id="huh-c4-oRP"/>
                             <constraint firstItem="cZZ-N4-8Sb" firstAttribute="top" secondItem="jl5-j1-ldZ" secondAttribute="top" constant="20" id="lbh-Jc-OPg"/>
                             <constraint firstItem="fop-6z-6EZ" firstAttribute="leading" secondItem="jl5-j1-ldZ" secondAttribute="leading" constant="20" id="mPx-7b-rlt"/>
