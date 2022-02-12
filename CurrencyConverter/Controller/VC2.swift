@@ -151,13 +151,10 @@ class VC2: UIViewController {
             dismiss(animated: true, completion: nil)
         
         } else {
-           
             let alert = UIAlertController(title: "Error", message: "Please, enter the type of currency!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            
         }
-        
     }
     
     override func viewDidLoad() {

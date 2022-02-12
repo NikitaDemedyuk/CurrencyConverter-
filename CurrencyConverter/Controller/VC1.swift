@@ -65,7 +65,7 @@ class VC1: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onClearTapped(_ sender: UIButton) {
-        
+
         txtField1.text = ""
         txtField2.text = ""
     
