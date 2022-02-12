@@ -62,7 +62,6 @@ class VC1: UIViewController, UITextFieldDelegate {
     @IBAction func onConvertTapped(_ sender: UIButton) {
     
         calculate()
-        
     }
     
     @IBAction func onClearTapped(_ sender: UIButton) {
