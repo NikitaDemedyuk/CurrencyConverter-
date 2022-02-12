@@ -12,4 +12,5 @@ struct Currency {
     var typeCurrency: String!
     var imageFlagView: String!
     var currencyExchange: Double!
+    var boolFlag: Bool!
 }
