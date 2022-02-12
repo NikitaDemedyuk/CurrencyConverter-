@@ -33,7 +33,6 @@ class VC1: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var txtField1: UITextField!
     
-    
     @IBOutlet weak var selectCurBtn1: UIButton!
     
     @IBOutlet weak var flagImg2: UIImageView!
@@ -169,17 +168,17 @@ class VC1: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        money1 = Currency()
-        money2 = Currency()
+        money1 = Currency(typeCurrencyM: "EUR", imageFlagViewM: "eurFlagImage.jpg",currencyExchangeM: 2.0, boolFlagM: true)
+        money2 = Currency(typeCurrencyM: "USD", imageFlagViewM: "usdFlagImage.jpg", currencyExchangeM: 2.5, boolFlagM: false)
         
-        money1.boolFlag = true
-        money2.boolFlag = false
+        //money1.boolFlag = true
+        //money2.boolFlag = false
         
-        money1.typeCurrency = "EUR"
-        money2.typeCurrency = "USD"
+        //money1.typeCurrency = "EUR"
+        //money2.typeCurrency = "USD"
         
-        money1.currencyExchange = 2.0
-        money2.currencyExchange = 2.5
+        //money1.currencyExchange = 2.0
+        //money2.currencyExchange = 2.5
         
         txtField1.keyboardType = .decimalPad
         txtField2.keyboardType = .decimalPad

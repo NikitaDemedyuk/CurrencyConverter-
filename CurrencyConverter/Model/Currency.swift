@@ -13,4 +13,16 @@ struct Currency {
     var imageFlagView: String!
     var currencyExchange: Double!
     var boolFlag: Bool!
+    
+    init () {}
+    
+    init (typeCurrencyM: String, imageFlagViewM: String, currencyExchangeM: Double, boolFlagM: Bool) {
+        self.typeCurrency = typeCurrencyM
+        self.imageFlagView = imageFlagViewM
+        self.currencyExchange = currencyExchangeM
+        self.boolFlag = boolFlagM
+    }
+    
+    
+    
 }
