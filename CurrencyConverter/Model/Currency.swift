@@ -30,7 +30,4 @@ struct Currency {
         self.currencyExchange = currencyExchangeM
         self.boolFlag = boolFlagM
     }
-    
-    
-    
 }
