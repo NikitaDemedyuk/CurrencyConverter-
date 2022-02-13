@@ -21,6 +21,4 @@ class VC3: UIViewController {
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-
 }

@@ -20,6 +20,7 @@ class VC1: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var typeCur1: UILabel!
     
     @IBAction func selectCur1BtnAct(_ sender: Any) {
+        
         selectCurBtn1.setSelectColorBtnSelect()
         selectCurBtn2.setDeselectColorBtnSelect()
         
@@ -47,6 +48,7 @@ class VC1: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var clearBtn: UIButton!
     
     @IBAction func selectCur2BtnAct(_ sender: Any) {
+        
         selectCurBtn1.setDeselectColorBtnSelect()
         selectCurBtn2.setSelectColorBtnSelect()
         

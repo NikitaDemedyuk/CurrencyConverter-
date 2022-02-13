@@ -30,6 +30,7 @@ class VC2: UIViewController {
     }
     
     @IBAction func onBYNTapped(_ sender: Any) {
+        
         BYNBtn.setSelectColorBtnCur()
         RUSBtn.setDeselectColorBtnCur()
         USDBtn.setDeselectColorBtnCur()
@@ -49,6 +50,7 @@ class VC2: UIViewController {
     }
     
     @IBAction func onRUSTapped(_ sender: Any) {
+        
         BYNBtn.setDeselectColorBtnCur()
         RUSBtn.setSelectColorBtnCur()
         USDBtn.setDeselectColorBtnCur()
@@ -69,6 +71,7 @@ class VC2: UIViewController {
     }
     
     @IBAction func onUSDTapped(_ sender: Any) {
+        
         BYNBtn.setDeselectColorBtnCur()
         RUSBtn.setDeselectColorBtnCur()
         USDBtn.setSelectColorBtnCur()
@@ -121,34 +124,19 @@ class VC2: UIViewController {
     var doubleCurClosureM2: ClosureDouble?
 
     @IBAction func selectBtnPressed(_ sender: Any) {
-        
-            
         if money1.typeCurrency != nil {
-        
             selectBtn.setSelectColorBtnSelect()
-            
             dataClosure?(money1.typeCurrency)
-            
             flagClosure?(money1.imageFlagView)
-            
             doubleCurClosureM1?(money1.currencyExchange)
-            
             dismiss(animated: true, completion: nil)
-        
         }
-        
         if money2.typeCurrency != nil {
-           
             selectBtn.setSelectColorBtnSelect()
-            
             dataClosure2?(money2.typeCurrency)
-            
             flagClosure2?(money2.imageFlagView)
-            
             doubleCurClosureM2?(money2.currencyExchange)
-            
             dismiss(animated: true, completion: nil)
-        
         } else {
             let alert = UIAlertController(title: "Error", message: "Please, enter the type of currency!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -158,9 +146,7 @@ class VC2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         money1 = Currency()
         money2 = Currency()
-        
     }
 }
