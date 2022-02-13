@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController storyboardIdentifier="VC1" id="BYZ-38-t0r" customClass="VC1" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="RKe-mh-hKV">
@@ -91,7 +91,7 @@
                                 <variation key="heightClass=compact-widthClass=regular" spacing="20"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sz7-Cq-new">
-                                <rect key="frame" x="70" y="94" width="235" height="34.333333333333343"/>
+                                <rect key="frame" x="70" y="94" width="250" height="34.333333333333343"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rRZ-sr-goZ">
-                                <rect key="frame" x="235" y="213.33333333333334" width="90" height="60.000000000000028"/>
+                                <rect key="frame" x="250" y="213.33333333333334" width="90" height="60.000000000000028"/>
                                 <color key="backgroundColor" red="0.60272435769999999" green="0.76939731840000003" blue="0.61107732670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Lvi-Nt-JUT"/>
@@ -121,7 +121,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xze-0b-jHM">
-                                <rect key="frame" x="235" y="388.33333333333331" width="90" height="60"/>
+                                <rect key="frame" x="250" y="388.33333333333331" width="90" height="60"/>
                                 <color key="backgroundColor" red="0.60272435769999999" green="0.76939731840000003" blue="0.61107732670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="6pE-eH-mKd"/>
@@ -138,7 +138,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvX-di-s4o">
-                                <rect key="frame" x="50" y="656" width="275" height="31"/>
+                                <rect key="frame" x="50" y="688" width="290" height="31"/>
                                 <color key="backgroundColor" red="0.89286960559999995" green="0.87024373470000005" blue="0.3922449637" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BZg-kA-aow"/>
@@ -175,7 +175,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuN-QF-3Gi">
-                                <rect key="frame" x="269.66666666666669" y="44" width="85.333333333333314" height="41.333333333333343"/>
+                                <rect key="frame" x="284.66666666666669" y="44" width="85.333333333333314" height="41.333333333333343"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="info.circle" catalog="system" title=" Info">
@@ -186,7 +186,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oJ-OR-uX8">
-                                <rect key="frame" x="50" y="717" width="275" height="31"/>
+                                <rect key="frame" x="50" y="749" width="290" height="31"/>
                                 <color key="backgroundColor" red="0.89286960559999995" green="0.87024373470000005" blue="0.3922449637" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="43z-BB-GPG"/>
@@ -303,10 +303,10 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="AZd-b3-PMf"/>
+                                <exclude reference="Gn2-14-PfO"/>
                                 <exclude reference="Rzu-eb-OKU"/>
                                 <exclude reference="y2d-bT-Eow"/>
                                 <exclude reference="zoy-mc-YCK"/>
-                                <exclude reference="Gn2-14-PfO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -314,13 +314,13 @@
                                 <include reference="AZd-b3-PMf"/>
                                 <exclude reference="hVn-Aj-pHV"/>
                                 <exclude reference="hxc-gk-fmb"/>
-                                <exclude reference="ldO-Wp-pOT"/>
-                                <exclude reference="oZQ-2B-6Oy"/>
+                                <include reference="Gn2-14-PfO"/>
                                 <exclude reference="LF3-PO-sEf"/>
                                 <exclude reference="ha1-Kj-rIg"/>
                                 <include reference="y2d-bT-Eow"/>
                                 <include reference="zoy-mc-YCK"/>
-                                <include reference="Gn2-14-PfO"/>
+                                <exclude reference="ldO-Wp-pOT"/>
+                                <exclude reference="oZQ-2B-6Oy"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -328,14 +328,14 @@
                                 <include reference="AZd-b3-PMf"/>
                                 <exclude reference="hVn-Aj-pHV"/>
                                 <exclude reference="hxc-gk-fmb"/>
-                                <exclude reference="ldO-Wp-pOT"/>
-                                <exclude reference="oZQ-2B-6Oy"/>
+                                <include reference="Gn2-14-PfO"/>
                                 <exclude reference="LF3-PO-sEf"/>
                                 <exclude reference="Rzu-eb-OKU"/>
                                 <exclude reference="ha1-Kj-rIg"/>
                                 <include reference="y2d-bT-Eow"/>
                                 <include reference="zoy-mc-YCK"/>
-                                <include reference="Gn2-14-PfO"/>
+                                <exclude reference="ldO-Wp-pOT"/>
+                                <exclude reference="oZQ-2B-6Oy"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -367,7 +367,7 @@
             <objects>
                 <viewController storyboardIdentifier="VC2" id="Za3-UV-LDc" customClass="VC2" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HkO-NT-jjR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwq-Q3-Gpx">
@@ -382,10 +382,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="syl-fE-Q5h">
-                                <rect key="frame" x="50" y="163" width="275" height="274"/>
+                                <rect key="frame" x="50" y="163" width="290" height="274"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1L6-P2-Cr7">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="31"/>
                                         <color key="backgroundColor" red="0.88207146916629575" green="0.86068261255031886" blue="0.39130505548871897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="400" id="PRr-nx-hNM"/>
@@ -423,7 +423,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd8-MH-mtu">
-                                        <rect key="frame" x="0.0" y="81" width="275" height="31"/>
+                                        <rect key="frame" x="0.0" y="81" width="290" height="31"/>
                                         <color key="backgroundColor" red="0.88207146920000001" green="0.86068261260000001" blue="0.3913050555" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="euF-L5-oed"/>
@@ -461,7 +461,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L23-Rn-DWG">
-                                        <rect key="frame" x="0.0" y="162" width="275" height="31"/>
+                                        <rect key="frame" x="0.0" y="162" width="290" height="31"/>
                                         <color key="backgroundColor" red="0.88207146920000001" green="0.86068261260000001" blue="0.3913050555" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="GDw-el-1tG"/>
@@ -499,7 +499,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiY-z5-M9f">
-                                        <rect key="frame" x="0.0" y="243" width="275" height="31"/>
+                                        <rect key="frame" x="0.0" y="243" width="290" height="31"/>
                                         <color key="backgroundColor" red="0.88207146920000001" green="0.86068261260000001" blue="0.3913050555" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="LmK-jf-MRd"/>
@@ -545,7 +545,7 @@
                                 </variation>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the currency:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6j-gS-jKf">
-                                <rect key="frame" x="40" y="88" width="295" height="35"/>
+                                <rect key="frame" x="40" y="88" width="310" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="BwH-8p-KsW"/>
                                 </constraints>
@@ -557,7 +557,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NX-hU-GP3">
-                                <rect key="frame" x="50" y="625.66666666666663" width="275" height="48.333333333333371"/>
+                                <rect key="frame" x="50" y="657.66666666666663" width="290" height="48.333333333333371"/>
                                 <color key="backgroundColor" red="0.78337205399999998" green="1" blue="0.79422856320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="fap-hA-SRV"/>
@@ -674,7 +674,7 @@
             <objects>
                 <viewController id="Os2-FV-GPy" customClass="VC3" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="seO-80-6uG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZZ-N4-8Sb">
@@ -690,7 +690,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use this app?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8O-aP-uNx">
-                                <rect key="frame" x="50" y="78" width="275" height="37"/>
+                                <rect key="frame" x="50" y="78" width="290" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="mDw-87-LyV"/>
                                 </constraints>
@@ -717,9 +717,9 @@
                                 </variation>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fop-6z-6EZ">
-                                <rect key="frame" x="20" y="120" width="335" height="584"/>
+                                <rect key="frame" x="20" y="120" width="350" height="616"/>
                                 <color key="backgroundColor" red="0.65359432340000001" green="0.76939731840000003" blue="0.72677337689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">When you have opened this app you should do:
+                                <string key="text">When you have opened this app you should do:
 1) First of all, you must select the currency type for upper text field by pressing upper button "Select currency"
 2) Then you must select the currency type for lower text field by pressing lower button "Select currency"
 3) After that you can enter number in text field, next to which there is a DARK GREEN button "Select currency"
@@ -730,7 +730,7 @@ Currency course:
 1 EUR = 1.25 USD
 1 RUS = 1.6 BYN
 1 USD = 2 RUS 
-1 EUR = 4 BYN</mutableString>
+1 EUR = 4 BYN</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

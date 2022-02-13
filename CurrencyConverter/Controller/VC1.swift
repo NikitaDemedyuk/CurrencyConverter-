@@ -134,33 +134,40 @@ class VC1: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func calculate() {
+    func calculate() -> Double {
         if !txtField1.text!.isEmpty || !txtField2.text!.isEmpty {
             if money1.boolFlag! {
                 let numField1 = Double(txtField1.text!)
-                txtField2.text = String(numField1! / money1.currencyExchange * money2.currencyExchange)
+                money2.moneySum = numField1! / money1.currencyExchange * money2.currencyExchange
+                txtField2.text = String(money2.moneySum)
+                return money2.moneySum
             }
 
             if money2.boolFlag! {
                 let numField2 = Double(txtField2.text!)
-                txtField1.text = String(numField2! / money2.currencyExchange * money1.currencyExchange)
+                money1.moneySum = numField2! / money2.currencyExchange * money1.currencyExchange
+                txtField1.text = String(money1.moneySum)
+                return money1.moneySum
             }
             
             if !money1.boolFlag && !money2.boolFlag {
                 let alert = showAlert(message1: "Select currecny", message2: "Please, select currecny at least in one field!")
                 self.present(alert, animated: true, completion: nil)
+                return 0.0
             }
         } else {
             let alert = showAlert(message1: "Empty fields" , message2: "Please, enter numbers at least in one field!")
             self.present(alert, animated: true, completion: nil)
+            return 0.0
         }
+        return 0.0
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        money1 = Currency(typeCurrencyM: "EUR", imageFlagViewM: "eurFlagImage.jpg",currencyExchangeM: 2.0, boolFlagM: false)
-        money2 = Currency(typeCurrencyM: "USD", imageFlagViewM: "usdFlagImage.jpg", currencyExchangeM: 2.5, boolFlagM: false)
+        money1 = Currency(moneySumM: 0.0,typeCurrencyM: "EUR", imageFlagViewM: "eurFlagImage.jpg",currencyExchangeM: 2.0, boolFlagM: false)
+        money2 = Currency(moneySumM: 0.0, typeCurrencyM: "USD", imageFlagViewM: "usdFlagImage.jpg", currencyExchangeM: 2.5, boolFlagM: false)
         
         txtField1.keyboardType = .decimalPad
         txtField2.keyboardType = .decimalPad

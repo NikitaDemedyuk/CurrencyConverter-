@@ -98,7 +98,6 @@ class VC2: UIViewController {
             money1.typeCurrency = "EUR"
             money1.imageFlagView = "EURFlag"
             money1.currencyExchange = 2.0
-            
         }
         
         if segueIdentifier == "selCur2" {

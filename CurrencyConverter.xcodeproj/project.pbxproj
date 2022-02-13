@@ -18,6 +18,10 @@
 		11E8167B27B42775003D5B88 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8167A27B42775003D5B88 /* VC2.swift */; };
 		11E8167D27B44289003D5B88 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8167C27B44289003D5B88 /* Currency.swift */; };
 		11FDA74127B8F16300BB304D /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FDA74027B8F16300BB304D /* CurrencyConverterTests.swift */; };
+		11FDA74727B8F9E100BB304D /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8166727B413F5003D5B88 /* VC1.swift */; };
+		11FDA74927B9009700BB304D /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8167A27B42775003D5B88 /* VC2.swift */; };
+		11FDA74A27B9009C00BB304D /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C56CC27B66F2C004695AA /* UIButtonExt.swift */; };
+		11FDA74B27B9009F00BB304D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8167C27B44289003D5B88 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,7 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FDA74927B9009700BB304D /* VC2.swift in Sources */,
+				11FDA74B27B9009F00BB304D /* Currency.swift in Sources */,
+				11FDA74727B8F9E100BB304D /* VC1.swift in Sources */,
 				11FDA74127B8F16300BB304D /* CurrencyConverterTests.swift in Sources */,
+				11FDA74A27B9009C00BB304D /* UIButtonExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

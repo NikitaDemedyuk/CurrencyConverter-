@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct Currency {
+    var moneySum: Double!
     var typeCurrency: String!
     var imageFlagView: String!
     var currencyExchange: Double!
@@ -16,7 +17,14 @@ struct Currency {
     
     init () {}
     
-    init (typeCurrencyM: String, imageFlagViewM: String, currencyExchangeM: Double, boolFlagM: Bool) {
+    init (moneySumM: Double, typeCurrencyM: String, boolFlagM: Bool) {
+        self.moneySum = moneySumM
+        self.typeCurrency = typeCurrencyM
+        self.boolFlag = boolFlagM
+    }
+    
+    init (moneySumM: Double, typeCurrencyM: String, imageFlagViewM: String, currencyExchangeM: Double, boolFlagM: Bool) {
+        self.moneySum = moneySumM
         self.typeCurrency = typeCurrencyM
         self.imageFlagView = imageFlagViewM
         self.currencyExchange = currencyExchangeM
