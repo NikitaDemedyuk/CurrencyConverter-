@@ -28,7 +28,6 @@ class VC1: UIViewController, UITextFieldDelegate {
         
         txtField1.isEnabled = true
         txtField2.isEnabled = false
-        
     }
     
     @IBOutlet weak var txtField1: UITextField!
@@ -59,30 +58,19 @@ class VC1: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onConvertTapped(_ sender: UIButton) {
-    
         calculate()
     }
     
     @IBAction func onClearTapped(_ sender: UIButton) {
-
         txtField1.text = ""
         txtField2.text = ""
-    
     }
     
-    
-   /*
-    func checkString(string: String) -> Bool {
-        let set = CharacterSet(charactersIn: string)
-        
-        if CharacterSet.decimalDigits.isSuperset(of: set) {
-            return true
-        } else {
-            return false
-        }
+    func showAlert(message1: String, message2: String) -> UIAlertController {
+        let alert = UIAlertController(title: message1, message: message2, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        return alert
     }
-    */
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first as? UITouch {
@@ -157,28 +145,22 @@ class VC1: UIViewController, UITextFieldDelegate {
                 let numField2 = Double(txtField2.text!)
                 txtField1.text = String(numField2! / money2.currencyExchange * money1.currencyExchange)
             }
+            
+            if !money1.boolFlag && !money2.boolFlag {
+                let alert = showAlert(message1: "Select currecny", message2: "Please, select currecny at least in one field!")
+                self.present(alert, animated: true, completion: nil)
+            }
         } else {
-            let alert = UIAlertController(title: "Empty fields", message: "Please, enter numbers at least in one field!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            let alert = showAlert(message1: "Empty fields" , message2: "Please, enter numbers at least in one field!")
             self.present(alert, animated: true, completion: nil)
-          
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        money1 = Currency(typeCurrencyM: "EUR", imageFlagViewM: "eurFlagImage.jpg",currencyExchangeM: 2.0, boolFlagM: true)
+        money1 = Currency(typeCurrencyM: "EUR", imageFlagViewM: "eurFlagImage.jpg",currencyExchangeM: 2.0, boolFlagM: false)
         money2 = Currency(typeCurrencyM: "USD", imageFlagViewM: "usdFlagImage.jpg", currencyExchangeM: 2.5, boolFlagM: false)
-        
-        //money1.boolFlag = true
-        //money2.boolFlag = false
-        
-        //money1.typeCurrency = "EUR"
-        //money2.typeCurrency = "USD"
-        
-        //money1.currencyExchange = 2.0
-        //money2.currencyExchange = 2.5
         
         txtField1.keyboardType = .decimalPad
         txtField2.keyboardType = .decimalPad

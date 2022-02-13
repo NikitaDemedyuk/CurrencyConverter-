@@ -39,8 +39,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XA2-a7-pBT">
-                                <rect key="frame" x="50" y="658" width="290" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOS 15.2, Xcode 13.2.1 (13C100) " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XA2-a7-pBT">
+                                <rect key="frame" x="50" y="658" width="290" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,23 +49,61 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.6361011111021504" green="0.76756959617486542" blue="0.79835724830627441" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="JRw-XR-u3u" firstAttribute="top" secondItem="ewo-OB-Cfb" secondAttribute="bottom" constant="100" id="6cb-B4-etH"/>
+                            <constraint firstItem="JRw-XR-u3u" firstAttribute="top" secondItem="ewo-OB-Cfb" secondAttribute="bottom" constant="100" id="6cb-B4-etH">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pqZ-eV-7X4" secondAttribute="trailing" constant="107" id="BkQ-aS-sly"/>
                             <constraint firstItem="XA2-a7-pBT" firstAttribute="top" secondItem="JRw-XR-u3u" secondAttribute="bottom" constant="33" id="FXU-Sr-UnH"/>
                             <constraint firstItem="pqZ-eV-7X4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="Gi6-iG-xzT"/>
                             <constraint firstItem="XA2-a7-pBT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="WjU-HA-CCh"/>
-                            <constraint firstItem="pqZ-eV-7X4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="cUQ-rI-GkG"/>
+                            <constraint firstItem="pqZ-eV-7X4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="cUQ-rI-GkG">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                            </constraint>
                             <constraint firstItem="XA2-a7-pBT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dJB-b6-nZw"/>
                             <constraint firstItem="ewo-OB-Cfb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dvj-GM-oIn"/>
                             <constraint firstItem="JRw-XR-u3u" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="g21-88-vKy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ewo-OB-Cfb" secondAttribute="trailing" constant="44.5" id="gHj-hQ-5Yr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XA2-a7-pBT" secondAttribute="trailing" constant="50" id="nnd-Jo-zr9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XA2-a7-pBT" secondAttribute="trailing" constant="50" id="nnd-Jo-zr9">
+                                <variation key="heightClass=compact-widthClass=compact" constant="25"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JRw-XR-u3u" secondAttribute="trailing" constant="50" id="p4Z-Sc-e02"/>
                             <constraint firstItem="JRw-XR-u3u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="v3X-6s-U9p"/>
                             <constraint firstItem="pqZ-eV-7X4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="v9B-tx-6kb"/>
+                            <constraint firstItem="XA2-a7-pBT" firstAttribute="top" secondItem="ewo-OB-Cfb" secondAttribute="bottom" constant="10" id="wLY-z0-e9K"/>
                             <constraint firstItem="ewo-OB-Cfb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44.5" id="wP5-Z5-joM"/>
-                            <constraint firstItem="ewo-OB-Cfb" firstAttribute="top" secondItem="pqZ-eV-7X4" secondAttribute="bottom" constant="55" id="wuA-ES-1Ja"/>
+                            <constraint firstItem="ewo-OB-Cfb" firstAttribute="top" secondItem="pqZ-eV-7X4" secondAttribute="bottom" constant="55" id="wuA-ES-1Ja">
+                                <variation key="heightClass=compact-widthClass=compact" constant="5"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="5"/>
+                            </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wLY-z0-e9K"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="p4Z-Sc-e02"/>
+                                <exclude reference="g21-88-vKy"/>
+                                <exclude reference="FXU-Sr-UnH"/>
+                                <exclude reference="WjU-HA-CCh"/>
+                                <exclude reference="dJB-b6-nZw"/>
+                                <include reference="wLY-z0-e9K"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="p4Z-Sc-e02"/>
+                                <exclude reference="g21-88-vKy"/>
+                                <exclude reference="FXU-Sr-UnH"/>
+                                <exclude reference="WjU-HA-CCh"/>
+                                <exclude reference="dJB-b6-nZw"/>
+                                <include reference="wLY-z0-e9K"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
